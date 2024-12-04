@@ -16,6 +16,8 @@ document.getElementById("colorForm").addEventListener("submit", function (event)
   // Backend URL
   const backendUrl = "https://colorserver.onrender.com/predict/";
 
+  document.getElementById("result").innerText = "Color Works";
+
   // Fetch the prediction from the backend
   fetch(`${backendUrl}${hexColor}`)
     .then(response => {
