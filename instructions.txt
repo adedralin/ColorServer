@@ -1,0 +1,15 @@
+each "team" will give me a URL to hit with a script (or GUI, if i have time) of the format:
+
+http://[your url]ffffff where color is an RGB color in hex format (FFFFFF = WHITE) and your job is to return one of the following colors : 
+pink
+red
+orange
+yellow
+green
+blue
+violet
+black
+brown
+grey
+white 
+i will simply append the color to the URL your provide. so you can have it be anything. I will simply call your URL+currentColor and expect a string in response. Not JSON, just text 
