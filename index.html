@@ -1,7 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <h1>Color Predictor</h1>
+  <p>Enter a HEX color code (e.g., #FF5733) to predict the color name:</p>
+
+  <!-- Form to input HEX color -->
+  <form id="colorForm">
+    <input type="text" id="hexInput" placeholder="#FFFFFF" maxlength="7" required>
+    <button type="submit">Predict Color</button>
+  </form>
+
+  <!-- Display result -->
+  <div id="result"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
